@@ -1,0 +1,25 @@
+<%= render partial: "tools/new" %>
+
+<% if @tools.present? %>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>Description</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <% @tools.each do |tool| %>
+  <tbody>
+    <tr>
+      <td><%=tool.name %></td>
+      <td><%=tool.description %></td>
+      <td><%=tool.quantity %></td>
+      <td><%= button_to "delete", {:controller => :tools,
+      :action => 'destroy', :id => tool.id }, :method => :delete, class: "btn btn-danger btn-xs" %>
+    </tr>
+  </tbody>
+  <% end %>
+</table>
+<% end %>
+
