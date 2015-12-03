@@ -13,15 +13,12 @@
 
 ActiveRecord::Schema.define(version: 20151123170546) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "tools", force: :cascade do |t|
-    t.string   "name",        default: "", null: false
-    t.string   "description", default: "", null: false
-    t.integer  "quantity"
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
+    t.string   "name",        limit: 255, default: "", null: false
+    t.string   "description", limit: 255, default: "", null: false
+    t.integer  "quantity",    limit: 4
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
   end
 
 end
