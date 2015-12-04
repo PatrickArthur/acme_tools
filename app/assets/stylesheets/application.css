@@ -16,11 +16,19 @@
 
 
 .data_form {
-  text-align: center
+  text-align: center;
+}
+
+.new_tool {
+  color: red;
 }
 
 .navbar {
     background-color: #0000FF;
     font-family: "Times New Roman", Times, serif;
     color: white;
+}
+
+legend {
+    text-align: center;
 }

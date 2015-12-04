@@ -10,7 +10,6 @@
     </tr>
   </thead>
   <% @tools.each do |tool| %>
-  <% if tool.description.present? %>
   <tbody>
     <tr>
       <td><%=tool.name %></td>
@@ -21,7 +20,8 @@
     </tr>
   </tbody>
   <% end %>
-  <% end %>
 </table>
+<%= will_paginate @tools %>
 <% end %>
+
 

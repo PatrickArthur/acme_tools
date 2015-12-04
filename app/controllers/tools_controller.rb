@@ -1,6 +1,7 @@
 class ToolsController < ApplicationController
   def index
-    @tools = Tool.all
+    tools = Tool.all
+    @tools = tools.order('created_at DESC').paginate(:page => params[:page], :per_page => 3)
     @select_menu = ToolType.uniq.pluck(:tool_type)
   end
 

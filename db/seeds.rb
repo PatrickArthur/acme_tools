@@ -14,4 +14,9 @@ ToolType.create(tool_type: "Rake")
 ToolType.create(tool_type: "Axe")
 ToolType.create(tool_type: "Sledgehammer")
 ToolType.create(tool_type: "Sickle")
+ToolType.create(tool_type: "Lawn Mower")
+ToolType.create(tool_type: "Torches")
+ToolType.create(tool_type: "Brooms")
+ToolType.create(tool_type: "Machettes")
+
 
