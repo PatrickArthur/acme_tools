@@ -1,5 +1,3 @@
-require 'socket'
-
 class ToolsController < ApplicationController
   def index
     @tools = Tool.all
