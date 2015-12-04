@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+ToolType.create(tool_type: "Hammer")
+ToolType.create(tool_type: "Wrench")
+ToolType.create(tool_type: "Screw")
+ToolType.create(tool_type: "Nails")
+ToolType.create(tool_type: "Rake")
+ToolType.create(tool_type: "Axe")
+ToolType.create(tool_type: "Sledgehammer")
+ToolType.create(tool_type: "Sickle")
+

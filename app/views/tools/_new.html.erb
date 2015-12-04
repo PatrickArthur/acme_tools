@@ -1,10 +1,11 @@
 <%= form_for [Tool.new()], class: "data_form" do |f| %>
 <legend>Fill in and Click Submit to Deploy</legend>
 
-<div class="form-group">
-  <%= f.label :name, class: "col-sm-4 control-label", for: "textinput"%>
+<div class = "form-group">
+  <%= f.label :name, class: "col-sm-4 control-label", for: "name"%>
   <div class="col-sm-8">
-    <%= f.text_field :name, class: "form-control"%></br>
+    <%= f.select(:name, @select_menu , {prompt: "Please Select"}, { :class => 'form-control' } ) %>
+  </br>
   </div>
 </div>
 

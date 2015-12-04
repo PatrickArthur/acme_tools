@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151123170546) do
+ActiveRecord::Schema.define(version: 20151203235949) do
+
+  create_table "tool_types", force: :cascade do |t|
+    t.string "tool_type", limit: 255, default: "", null: false
+  end
 
   create_table "tools", force: :cascade do |t|
     t.string   "name",        limit: 255, default: "", null: false

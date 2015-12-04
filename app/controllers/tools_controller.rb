@@ -3,6 +3,7 @@ require 'socket'
 class ToolsController < ApplicationController
   def index
     @tools = Tool.all
+    @select_menu = ToolType.uniq.pluck(:tool_type)
   end
 
   def new
