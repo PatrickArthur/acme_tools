@@ -1,0 +1,5 @@
+Version: ImageMagick 6.9.0-3 Q16 x86_64 2015-01-09 http://www.imagemagick.org
+Copyright: Copyright (C) 1999-2015 ImageMagick Studio LLC
+Features: DPC Modules
+Delegates (built-in): bzlib freetype jng jpeg ltdl lzma png xml zlib
+
