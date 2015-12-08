@@ -1,5 +1,5 @@
 development:
-  adapter: mysql2
+  adapter: mysql
   encoding: utf8
   database: acme_development
   username: root
@@ -8,7 +8,7 @@ development:
   port: 3000
 
 test:
-  adapter: mysql2
+  adapter: mysql
   encoding: utf8
   database: acme_test
   username: root
